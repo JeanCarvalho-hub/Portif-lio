@@ -1,0 +1,19 @@
+@media(max-width: 700px){
+    .project-list{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2em;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+    .project-list li{
+        margin-right:5em ;
+        scroll-snap-align: center;
+    }
+    .div-list{
+        width: 20em;
+    }
+}

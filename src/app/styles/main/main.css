@@ -1,0 +1,62 @@
+main{
+    background-color: #1f1f3348;
+    padding: 0.2em;
+    border-top: 1px solid purple;
+    text-align: center;
+    overflow: hidden;
+}
+.box-title{
+    margin-top: 1.5em;
+    font-family: sans-serif;
+}
+.text-about-me {
+    max-width: 50%;
+    color: rgb(170, 170, 170);
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 2em auto;
+}
+#habilidades{
+    margin: 5em;
+}
+.cards-div{
+    width: 100%;
+    overflow-x: hidden;
+}
+.cards-list{
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: 2em;
+}
+.cards-list li{
+    background-color: rgba(20, 19, 24, 0.815);
+    border-bottom: 4px solid purple;
+    box-shadow: 1px 1px 2px 2px rgba(128, 0, 128, 0.178);
+    border-radius: 10px 10px 0 0;
+    padding: 1em 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 8em;
+    height: 8em;
+    text-align: center;
+    gap: 30px;
+    transition: all 0.3s ease;
+    
+}
+.cards-list span {
+    font-size: 0.9em;
+    color: rgb(172, 172, 172);
+}
+.cards-list li:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 1px 1px 1px transparent;
+    border: 1px solid purple;
+    cursor: pointer;
+}

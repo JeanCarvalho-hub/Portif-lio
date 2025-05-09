@@ -1,0 +1,20 @@
+@media(min-width: 1300px){
+    .link-li a{
+        width: 30%;
+    }
+}
+@media(max-width: 1300px){
+    .link-li a{
+        width: 50%;
+    }
+}
+@media(max-width: 800px){
+    .link-li a{
+        width: 50%;
+    }
+}
+@media(max-width: 680px){
+    .link-li a{
+        width: 90%;
+    }
+}

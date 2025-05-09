@@ -1,0 +1,74 @@
+.project-div {
+    margin: 3em 0;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2em 0;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .project-list li {
+    transition: transform 0.3s ease;
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+  
+  .project-list li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .div-list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .imagens-projetos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    transition: opacity 0.5s ease;
+    box-shadow: 0px 0px 40px 0px purple;
+  }
+  
+  .title-project {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 2;
+    pointer-events: none;
+    text-decoration: underline purple;
+
+  }
+  
+  .infoProject {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 19, 24, 0.815);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 0.9em;
+    border-left: 4px solid purple;
+    padding: 1em;
+    line-height: 1.3;
+    text-align: left;
+  }
+  .title-project-info{
+    color: rgb(177, 23, 216);
+    margin-bottom: 0.5em;
+  }
+  

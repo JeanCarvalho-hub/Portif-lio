@@ -1,0 +1,58 @@
+header{
+    margin: 3em;
+}
+.image-wrapper {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.Profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 4px 4px rgba(179, 47, 255, 0.562);
+    animation: pisca infinite 5s ease;
+}
+@keyframes pisca {
+    50%{box-shadow: 0px 0px 40px 0px rgba(37, 0, 248, 0.418);}
+
+    100%{box-shadow: 0px 0px 4px 4px rgba(179, 47, 255, 0.562);}
+}
+.box-link{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 2em auto 2.5em;
+    background-color: rgba(41, 41, 41, 0.493);
+    border-radius: 20px;
+}
+.link-styles{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+    padding: 0.7em;
+}         
+
+.link-styles.active{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+    background-color: rgb(97, 20, 168);
+    padding: 0.8em;
+    border-radius:20px;
+    outline: 1px solid rgba(12, 12, 12, 0.452);
+    outline-offset: -2px;
+}
+.icones-styles{
+    filter: invert(1);
+}
+.link-styles > span{
+    color: rgb(211, 211, 211);
+}
