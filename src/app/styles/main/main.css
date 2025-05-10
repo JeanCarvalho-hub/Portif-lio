@@ -34,9 +34,9 @@ main{
 }
 .cards-list li{
     background-color: rgba(20, 19, 24, 0.815);
-    border-bottom: 4px solid purple;
+    border: 2px solid rgb(185, 2, 185);
     box-shadow: 1px 1px 2px 2px rgba(128, 0, 128, 0.178);
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     padding: 1em 0.5em;
     display: flex;
     flex-direction: column;
@@ -47,16 +47,25 @@ main{
     text-align: center;
     gap: 30px;
     transition: all 0.3s ease;
-    
+    animation: change 2s ease-in-out infinite alternate;
+}
+@keyframes change {
+    0%{
+        border:1px solid rgb(119, 0, 255);
+    }
+    100%{
+        border:1px solid rgb(180, 4, 171);
+    }
 }
 .cards-list span {
     font-size: 0.9em;
-    color: rgb(172, 172, 172);
+    color: rgba(172, 172, 172, 0.801);
 }
 .cards-list li:hover{
     transform: scale(1.1);
     z-index: 1;
     box-shadow: 1px 1px 1px transparent;
-    border: 1px solid purple;
     cursor: pointer;
+    animation: none;
+    border: 1px solid rgb(187, 0, 156);
 }
